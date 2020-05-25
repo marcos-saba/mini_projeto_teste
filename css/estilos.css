@@ -1,21 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    background: #3398ff;
-    font-family: Arial;
-    color: white;
+    background-image: url('../fundo/paisagem2.jpg');
+    background-size: auto 100vh;
+    color: rgb(109, 112, 112);
+    font-family: 'Roboto';
+    height: 100vh;
+  }
+/*Se atela tiver pelo menos 400px vai carregar esses estilos*/
+  @media (min-width: 400px){
+    body {
+      font-size: 14px;
+    }
+
+  @media (min-width: 600px){
+    body {
+      font-size: 18px;
+      }
   }
   
   .menu {
-    background-color: rgb(112, 188, 250);
+    background-color:rgba(255, 255, 255, 0);
+    position: fixed;
+    width: 100vw;
+    top: 0;
   }
   
+  .menu a{
+    display: block;
+    padding: 10px 20px;
+  }
+
   a {
-    color: white;
+    color: rgba(7, 7, 7, 0.733);
     text-decoration: none;
+    font-weight: 550;
+
   }
-  
+  .menu:hover{
+    background-color: rgba(0, 0, 0, 0.219);
+  }
   a:hover{
     text-decoration: underline;
-    color: black;
+    color: rgb(255, 255, 255);
+  }
+
+  header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .menu ul {
@@ -28,11 +66,34 @@ body {
   }
   
   .site-title, .site-subtitle {
-    color: whitesmoke;
+    color: rgba(0, 0, 0, 0.801);
     text-align: center;
   }
-  
+ 
+  .site-title{
+    font-size: 3.5em;
+    font-family: 'Open Sans', sans-serif;
+  }
+
   .site-subtitle {
+    font-family: 'Mukta';
     font-style: italic;
+    line-height: 1.8em;
+  }
+
+  .portifolio{
+    padding: 2em;
+  }
+
+  .portifolio h2{
+    color: black;
+    font-family: 'Mukta';
+    margin-bottom: 1em;
+    font-size: 2em;
   }
   
+  .img-portfolio {
+    
+    height: 180px;
+    width: 180px;
+  }
